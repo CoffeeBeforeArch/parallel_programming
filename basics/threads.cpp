@@ -12,7 +12,7 @@ std::mutex my_mutex;
 void print_func(int id) {
   // Lock guard that follows the RAII design pattern
   std::lock_guard<std::mutex> g(my_mutex);
-  std::cout << "Printing from threads: " << id << '\n';
+  std::cout << "Printing from thread: " << id << '\n';
 }
 
 int main() {
