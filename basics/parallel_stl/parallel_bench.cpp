@@ -2,10 +2,14 @@
 // By: Nick from CoffeeBeforeArch
 
 #include <algorithm>
+#include <chrono>
 #include <execution>
 #include <iostream>
 #include <random>
 #include <vector>
+
+// Helper function for getting the current time for profiling
+auto get_time() { return std::chrono::high_resolution_clock::now(); }
 
 int main() {
   // Size of our vector
@@ -23,10 +27,14 @@ int main() {
   std::generate(begin(v), end(v), [&]() { return dist(rng); });
 
   // Reduce the vector in parallel and vectorized
-  int result = std::reduce(std::execution::par, begin(v), end(v));
+  auto start = get_time();
+  std::sort(std::execution::par, begin(v), end(v));
+  auto finish = get_time();
 
-  // Print out the result
-  std::cout << result << '\n';
+  // Print out the execution time
+  auto duration =
+      std::chrono::duration_cast<std::chrono::milliseconds>(finish - start);
+  std::cout << "Elapsed time = " << duration.count() << " ms\n";
 
   return 0;
 }
