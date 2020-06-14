@@ -23,7 +23,7 @@ int main() {
   std::generate(begin(v), end(v), [&]() { return dist(rng); });
 
   // Reduce the vector in parallel and vectorized
-  int result = std::reduce(std::execution::par_unseq, begin(v), end(v));
+  int result = std::reduce(std::execution::par, begin(v), end(v));
 
   // Print out the result
   std::cout << result << '\n';
