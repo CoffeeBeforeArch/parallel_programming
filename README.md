@@ -6,7 +6,7 @@ A collection of code examples for learning parallel programming concepts
 Suggestions for specific content can be sent to: CoffeeBeforeArch@gmail.com
 
 ## Environment 
-Operating System: Ubuntu 18.04
+Operating System: Ubuntu 20.04
 
 Text Editor: VIM
 
@@ -21,4 +21,5 @@ C++ Compiler: g++ (10.0 experimental)
 | | Pthreads | |
 | | OpenMP | |
 | | Parallel STL | |
+| | Intel TBB | |
 
