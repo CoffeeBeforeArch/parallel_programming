@@ -1,13 +1,13 @@
 // This program shows the basics of using TBB in C++
 // By: Nick from CoffeeBeforeArch
 
-#include "tbb/parallel_invoke.h"
-
 #include <algorithm>
 #include <chrono>
 #include <iostream>
 #include <random>
 #include <vector>
+
+#include "tbb/parallel_invoke.h"
 
 // Helper function for getting the current time for profiling
 auto get_time() { return std::chrono::high_resolution_clock::now(); }
