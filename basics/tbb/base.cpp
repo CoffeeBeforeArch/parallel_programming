@@ -1,8 +1,6 @@
 // This program serves as a baseline for the TBB example
 // By: Nick from CoffeeBeforeArch
 
-#include "tbb/parallel_invoke.h"
-
 #include <algorithm>
 #include <chrono>
 #include <iostream>
