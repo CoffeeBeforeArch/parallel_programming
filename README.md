@@ -1,4 +1,5 @@
-# parallel_programming
+# Parallel Programming
+
 A collection of code examples for learning parallel programming concepts
 
 ## Contact
@@ -10,9 +11,9 @@ Operating System: Ubuntu 20.04
 
 Text Editor: VIM
 
-C++ Compiler: g++ (10.0 experimental)
+C++ Compiler: g++ (10.2)
 
-# Concepts covered in C++ Crash Course
+# Concepts covered in Parallel Programming
 
 ## Introduction
 | Video | Concepts | Files |
